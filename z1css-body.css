@@ -1,0 +1,15 @@
+body{
+    background-color: #A80000;
+    background-image: url("https://seeklogo.com/images/C/carnet-logo-34FDE18225-seeklogo.com.png");
+    /*background-repeat: repeat-x;*/
+    /*bakground-repeat : repeat-y;*/
+    background-repeat: no-repeat;
+    background-position: 200px 50px;
+    background-attachment: fixed;
+}
+h1{
+    background-color: #C00000;
+}
+p{
+    background-color: #E00000;
+}
