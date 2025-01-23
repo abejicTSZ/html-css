@@ -1,0 +1,7 @@
+.prvi{
+    border: 1px solid red;
+    margin:0px 0px 0px 100px;
+}
+p.klasa{
+    margin: inherit;
+}

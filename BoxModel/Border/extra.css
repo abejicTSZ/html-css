@@ -1,0 +1,31 @@
+
+.s1{
+    border-style: inset;
+}
+.s2{
+    border-style: solid;
+}
+.s3{
+    border-style: ridge;
+}
+.s4{
+    border-style: revert;
+}
+.s5{
+    border-style: double;
+}
+.s6{
+    border-style: dot-dot-dash;
+}
+.s7{
+    border-style: initial;
+}
+.s8{
+    border-style: wave;
+}
+.s9{
+    border-style: dot-dash;
+}
+.s10{
+    border-style: groove;
+}
