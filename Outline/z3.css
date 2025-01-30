@@ -1,0 +1,10 @@
+p{
+    border: 1px solid black;
+}
+.paragrafoutlinereddoublethick{
+    outline: thick double red;
+}
+.paragrafoutline3pxdoublezelena{
+    outline: 3px double green;
+
+}
