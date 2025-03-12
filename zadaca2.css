@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header, footer {
+    height: 150px;
+    background-color: white;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    width: 700px;
+}
+
+aside {
+    width: 200px;
+    background-color: yellow;
+}
+
+section {
+    width: 700px;
+    background-color: lightblue;
+}
