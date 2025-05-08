@@ -1,0 +1,48 @@
+html, body {
+    height: 100%; /* Osiguravamo da stranica zauzima cijeli ekran */
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Postavljamo sadržaj u vertikalni smjer */
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #0077B6;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 10; /* Osiguravamo da je header uvijek iznad ostalog sadržaja */
+    position: sticky; /* Osiguravamo da ostane na vrhu kad scrollaš */
+    top: 0; /* Ako koristiš position: sticky, on će ostati na vrhu */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    flex: 1; /* Glavni sadržaj može zauzeti preostali prostor */
+    padding: 20px; /* Dodajemo malo paddinga za udobnost */
+}
+
+footer {
+    background-color: #004F73;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

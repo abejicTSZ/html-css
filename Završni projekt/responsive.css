@@ -1,0 +1,14 @@
+@media screen and (max-width: 1024px) {
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
