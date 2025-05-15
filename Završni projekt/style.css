@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background: #f0f0f0;
+    color: #333;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    background: #e91e63;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+nav h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #ff4081;
+    border-bottom: 2px solid white;
+}
+
+.hero,
+#about,
+#attractions {
+    background-size: cover;
+    background-position: center;
+    height: 79.4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero {
+    background-image: url('https://4kwallpapers.com/images/wallpapers/miami-downtown-florida-acosta-bridge-city-skyline-cityscape-3840x2160-4075.jpg');
+}
+
+#about {
+    background-image: url('https://wallpaperbat.com/img/6570667-ocean-drive-in-miami-beach-florida.png');
+}
+
+#attractions {
+    background-image: url('https://wallpaperbat.com/img/172046-miami-south-beach-wallpaper.jpg');
+}
+
+.hero-text,
+.about-text,
+.attractions-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.content-section {
+    padding: 60px 20px;
+    text-align: center;
+    background: white;
+}
+
+.content-section.dark {
+    background: #f4f4f4;
+}
+
+.content-section h2 {
+    font-size: 2.5rem;
+    color: #e91e63;
+    margin-bottom: 20px;
+}
+
+.content-section p,
+.content-section ul {
+    font-size: 1.2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.content-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content-section ul li {
+    margin: 10px 0;
+    font-weight: 300;
+}
+
+#gallery {
+    background: lightblue;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #e91e63;
+}
+
+form button {
+    background: #e91e63;
+    color: white;
+    padding: 12px;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #c2185b;
+}
+
+footer {
+    background: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+    margin-top: auto;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ff4081;
+}
+
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .content-section h2 {
+        font-size: 2rem;
+    }
+
+    .content-section p,
+    .content-section ul {
+        font-size: 1rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
