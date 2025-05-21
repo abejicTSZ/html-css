@@ -1,0 +1,44 @@
+@media (max-width: 64rem) {
+    nav ul {
+        flex-direction: row;
+        gap: 0.625rem;
+    }
+
+    .hero {
+        height: auto;
+        padding: 2.5rem 0.625rem;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    iframe {
+        width: 80%;
+        height: 30rem;
+    }
+}
+
+@media (min-width: 120rem) {
+    .hero {
+        min-height: 85vh;
+        background-position: center center;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    iframe {
+        width: 70%;
+        height: 35rem;
+    }
+
+    form {
+        max-width: 45rem;
+    }
+
+    img {
+        max-width: 70%;
+    }
+}
